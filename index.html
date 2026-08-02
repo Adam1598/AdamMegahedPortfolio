@@ -35,19 +35,19 @@
                 <ul>
 
                     <li>
-                        <a href="#portfolio">Portfolio</a>
+                        <a href="#portfolio">PORTFOLIO</a>
                     </li>
 
                     <li>
-                        <a href="#experience">Experience</a>
+                        <a href="#experience">EXPERIENCE</a>
                     </li>
 
                     <li>
-                        <a href="#education">Education</a>
+                        <a href="#education">EDUCATION</a>
                     </li>
 
                     <li>
-                        <a href="#contact">Contact</a>
+                        <a href="#contact">CONTACT</a>
                     </li>
 
                 </ul>
@@ -61,31 +61,37 @@
 
 
                 <!-- Resume Download -->
-                <a href="assets/documents/Adam Megahed - Resume.pdf" download>
-                    <img src="assets/icons/resume.svg" alt="Resume">
+                <a href="assets/documents/Adam Megahed - Resume.pdf"
+                 target="_blank"
+                    rel="noopener noreferrer">
+                    <img class="resume-icon" src="assets/icons/cv1.svg" alt="Resume" title="View Resume">
                 </a>
 
 
 
                 <!-- GitHub -->
-                <a href="https://github.com/Adam1598" target="_blank">
-                    <img src="assets/icons/github.svg" alt="GitHub">
+                <a href="https://github.com/Adam1598" target="_blank" rel="noopener noreferrer">
+                    <img class="github-icon" src="assets/icons/github.svg" alt="GitHub" title="GitHub">
                 </a>
 
 
 
                 <!-- LinkedIn -->
-                <a href="https://www.linkedin.com/in/adam-megahed-" target="_blank">
-                    <img src="assets/icons/linkedin.svg" alt="LinkedIn">
+                <a href="https://www.linkedin.com/in/adam-megahed-" target="_blank" rel="noopener noreferrer">
+                    <img class="linkedin-icon" src="assets/icons/linkedin.svg" alt="LinkedIn" title="LinkedIn">
                 </a>
 
 
 
                 <!-- Credly -->
-                <a href="https://www.credly.com/users/adam-megahed_/badges/credly" target="_blank">
-                    <img src="assets/icons/credly.svg" alt="Credly">
+                <a href="https://www.credly.com/users/adam-megahed_/badges/credly" target="_blank" rel="noopener noreferrer">
+                    <img class="credly-icon" src="assets/icons/credlyblack1.svg" alt="Credly" title="Credly Badges">
                 </a>
 
+                <!--Email-->
+                <a href="mailto:adam.megahed@gmail.com" target="_blank" rel="noopener noreferrer">
+                    <img class="email-icon" src="assets/icons/emailicon.svg" alt="Email" title="Email me!">
+                </a>
 
             </div>
 
@@ -118,10 +124,10 @@
             <!-- Description Card -->
             <div class="description-card">
 
-                <h2>Hello, I'm Adam</h2>
+                <h2>Hi! I'm Adam</h2>
 
                 <p>
-                    Your description goes here.
+                    I'm an Industrial Engineering student at The University of Toronto.
                 </p>
 
             </div>
@@ -139,7 +145,7 @@
     <!-- PORTFOLIO SECTION -->
     <section id="portfolio">
 
-        <h2>Portfolio</h2>
+        <h2>PORTFOLIO</h2>
 
 
         <!-- PROJECTS -->
@@ -148,14 +154,14 @@
             <h3>Projects</h3>
 
 
-            <div class="cards-container">
+            <div class="cards-container" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem;">
 
 
                 <!-- Arduino -->
                 <div class="card project-card">
 
                     <div class="card-icon">
-                        🔧
+                        <img src="assets/icons/sensor-svgrepo-com.svg">
                     </div>
 
                     <h4>Arduino Accessibility Sensor</h4>
@@ -174,9 +180,8 @@
 
                 <!-- UofT Discovery Chemistry -->
                 <div class="card project-card">
-
-                    <div class="card-icon">
-                        ⚗️
+                    <div class="card-icon custom-crop">
+                        <img class="testtube-icon" src="assets/icons/test-tube-svgrepo-com.svg">
                     </div>
 
                     <h4>UofT Discovery Chemistry</h4>
@@ -197,7 +202,7 @@
                 <div class="card project-card">
 
                     <div class="card-icon">
-                        ⚡
+                        <img class="turbineicon" src="assets/icons/turbine-svgrepo-com.svg">
                     </div>
 
                     <h4>UofT Discovery Physics</h4>
@@ -218,7 +223,7 @@
                 <div class="card project-card">
 
                     <div class="card-icon">
-                        💻
+                        <img class="temperature-icon" src="assets/icons/temperature-high-svgrepo-com.svg">
                     </div>
 
                     <h4>Python Temperature Calculator</h4>
@@ -253,7 +258,7 @@
                 <div class="card achievement-card">
 
                     <div class="card-icon">
-                        🛡️
+                        <img src="assets/icons/flag1.svg" alt="Flag">
                     </div>
 
                     <h4>picoCTF</h4>
@@ -273,7 +278,7 @@
                 <div class="card achievement-card">
 
                     <div class="card-icon">
-                        🏆
+                        <img src="assets/icons/medal.svg" alt="Skills Canada">
                     </div>
 
                     <h4>Skills Canada</h4>
@@ -293,7 +298,7 @@
                 <div class="card achievement-card">
 
                     <div class="card-icon">
-                        📜
+                        <img src="assets/icons/cert.svg" alt="Skills Ontario">
                     </div>
 
                     <h4>Certifications</h4>
@@ -329,7 +334,7 @@
                 <div class="card award-card">
 
                     <div class="card-icon">
-                        ⭐
+                        <img src="assets/icons/award.svg" alt="Award">
                     </div>
 
                     <h4>School Awards</h4>
@@ -349,7 +354,7 @@
                 <div class="card award-card">
 
                     <div class="card-icon">
-                        🎓
+                        <img src="assets/icons/schulich.svg" alt="Schulich">
                     </div>
 
                     <h4>Schulich</h4>
@@ -369,7 +374,7 @@
                 <div class="card award-card">
 
                     <div class="card-icon">
-                        🏅
+                        <img src="assets/icons/uoftblack.svg" alt="Book">
                     </div>
 
                     <h4>UofT Book Award</h4>
@@ -399,60 +404,45 @@
 
 
     <!-- EXPERIENCE SECTION -->
-    <section id="experience">
+  <section id="experience">
 
-        <h2>Experience</h2>
+    <h2>EXPERIENCE</h2>
 
-
-        <div class="cards-container">
-
-
-            <!-- Jobs -->
-            <div class="card experience-card">
-
-                <div class="card-icon">
-                    💼
-                </div>
-
-                <h4>Jobs I've Held</h4>
-
-                <p>
-                    Professional work experience.
-                </p>
-
-                <button class="expand-button">
-                    ↓
-                </button>
-
-            </div>
-
-
-
-            <!-- Entrepreneurial Activities -->
-            <div class="card experience-card">
-
-                <div class="card-icon">
-                    🚀
-                </div>
-
-                <h4>Entrepreneurial Activities</h4>
-
-                <p>
-                    Projects, initiatives, and entrepreneurial experiences.
-                </p>
-
-                <button class="expand-button">
-                    ↓
-                </button>
-
-            </div>
-
-
+    <div class="cards-container" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem;">
+        <!-- Job Card 1 -->
+        <div class="card experience-card">
+            <div class="card-icon"><img src="assets/icons/tdsbblack1.svg" alt="Job 1"></div>
+            <h4>Job Title 1</h4>
+            <p>Description of job 1.</p>
+            <button class="expand-button">↓</button>
         </div>
 
+        <!-- Job Card 2 -->
+        <div class="card experience-card">
+            <div class="card-icon"><img src="assets/icons/tdsbblack1.svg" alt="Job 1"></div>
+            <h4>Job Title 2</h4>
+            <p>Description of job 2.</p>
+            <button class="expand-button">↓</button>
+        </div>
 
-    </section>
+        <!-- Job Card 3 -->
+        <div class="card experience-card">
+            <div class="card-icon"><img src="assets/icons/tdsbblack1.svg" alt="Job 1"></div>
+            <h4>Job Title 3</h4>
+            <p>Description of job 3.</p>
+            <button class="expand-button">↓</button>
+        </div>
 
+        <!-- Entrepreneurial Activity Card -->
+        <div class="card experience-card">
+            <div class="card-icon"><img src="assets/icons/tutor.svg" alt="Entrepreneurial Activity"></div>
+            <h4>Entrepreneurial Project</h4>
+            <p>Description of entrepreneurial activity.</p>
+            <button class="expand-button">↓</button>
+        </div>
+    </div>
+
+</section>
 
 
 
@@ -462,7 +452,7 @@
     <!-- EDUCATION SECTION -->
     <section id="education">
 
-        <h2>Education</h2>
+        <h2>EDUCATION</h2>
 
 
 
@@ -478,7 +468,7 @@
                 <div class="card education-card">
 
                     <div class="card-icon">
-                        🏫
+                        <img src="assets/icons/school.svg" alt="HS0">
                     </div>
 
                     <h4>Activities</h4>
@@ -498,7 +488,7 @@
                 <div class="card education-card">
 
                     <div class="card-icon">
-                        📚
+                        <img src="assets/icons/courseshat.svg" alt="HS1">
                     </div>
 
                     <h4>Courses I've Taken</h4>
@@ -526,7 +516,7 @@
         <!-- University -->
         <div class="education-section">
 
-            <h3>University</h3>
+            <h3>Industrial Engineering, BASc</h3>
 
 
             <div class="cards-container">
@@ -535,9 +525,9 @@
                 <div class="card education-card">
 
                     <div class="card-icon">
-                        🎓
                     </div>
 
+                    <img class="uoft-logobig" src="assets/icons/uoftbig.png" alt="UofT logo big">
                     <h4>Courses I'm Taking</h4>
 
                     <p>
@@ -566,70 +556,51 @@
 
 
     <!-- CONTACT SECTION -->
-    <section id="contact">
+<section id="contact">
+    <h2>CONTACT</h2>
 
-        <h2>Contact</h2>
+    <div class="contact-container">
+        <!-- Contact Form Block -->
+        <form class="contact-form">
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <textarea placeholder="Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
 
-
-        <div class="contact-container">
-
-
-            <!-- Contact Form -->
-            <form class="contact-form">
-
-                <input type="text" placeholder="Name">
-
-                <input type="email" placeholder="Email">
-
-                <textarea placeholder="Message"></textarea>
-
-                <button type="submit">
-                    Send Message
-                </button>
-
-            </form>
-
-
-
-
-            <!-- Contact Information -->
-            <div class="contact-info">
-
-
-                <a href="assets/documents/Adam Megahed - Resume.pdf" download>
-                    Download Resume
-                </a>
-
-
-                <p>
-                    Email: your-email@example.com
-                </p>
-
-
-                <div class="social-links">
-
-                    <a href="https://github.com/Adam1598">
-                        GitHub
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/adam-megahed-">
-                        LinkedIn
-                    </a>
-
-                    <a href="https://www.credly.com/users/adam-megahed_/badges/credly">
-                        Credly
-                    </a>
-
-                </div>
-
-
-            </div>
-
-
+        <!-- Resume + Email Row -->
+        <div class="contact-meta">
+            <a href="assets/documents/Adam Megahed - Resume.pdf" download class="resume-btn">
+                Download Resume
+            </a>
+            <p class="contact-email"><strong>Email:</strong> adam.megahed@hotmail.com</p>
         </div>
 
+        <!-- Social Links -->
+        <div class="social-links">
 
-    </section>
+    <a href="assets/documents/Adam Megahed - Resume.pdf" download>
+        <img class="resume-icon" src="assets/icons/cv1.svg" alt="Resume" title="View Resume">
+    </a>
+
+    <a href="https://github.com/Adam1598">
+        <img class= "github-icon" src="assets/icons/github.svg" alt="GitHub" title="GitHub">
+    </a>
+
+    <a href="https://www.linkedin.com/in/adam-megahed-">
+        <img class = "linkedin-icon" src="assets/icons/linkedin.svg" alt="LinkedIn" title="LinkedIn">
+    </a>
+
+    <a href="https://www.credly.com/users/adam-megahed_/badges/credly">
+        <img class = "credly-icon" src="assets/icons/credlyblack1.svg" alt="Credly" title="Credly Bades">
+    </a>
+
+    <a href="mailto:adam.megahed@gmail.com" target="_blank" rel="noopener noreferrer">
+                    <img class="email-icon" src="assets/icons/emailicon.svg" alt="Email" title="Email me!">
+                </a>
+</div>
+    </div>
+</section>
 
     <script src="script.js"></script>
 
