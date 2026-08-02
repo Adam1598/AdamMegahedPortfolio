@@ -32,3 +32,31 @@ document.querySelector(".contact-form").addEventListener("submit", async (e) => 
 
     alert(result.message);
 });
+
+const form = document.getElementById("contact-form");
+
+form.addEventListener("submit", async (event) => {
+
+    event.preventDefault();
+
+    const data = {
+        name: form.elements[0].value,
+        email: form.elements[1].value,
+        message: form.elements[2].value
+    };
+
+
+    const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+    });
+
+
+    const result = await response.json();
+
+    alert(result.message);
+
+});
