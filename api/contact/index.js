@@ -1,12 +1,16 @@
-module.exports = async function (context, req) {
+const { app } = require("@azure/functions");
 
-    const { name, email, message } = req.body;
+app.http("contact", {
+    methods: ["POST"],
+    authLevel: "anonymous",
+    handler: async (request, context) => {
 
-    context.res = {
-        status: 200,
-        body: {
-            success: true,
-            message: "Message received!"
-        }
-    };
-};
+        return {
+            status: 200,
+            jsonBody: {
+                message: "Contact API works!"
+            }
+        };
+
+    }
+});
