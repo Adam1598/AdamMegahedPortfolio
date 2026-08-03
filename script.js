@@ -11,52 +11,29 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-document.querySelector(".contact-form").addEventListener("submit", async (e) => {
-    e.preventDefault();
+const contactForm = document.getElementById("contact-form");
 
-    const data = {
-        name: e.target.querySelector("input[type='text']").value,
-        email: e.target.querySelector("input[type='email']").value,
-        message: e.target.querySelector("textarea").value
-    };
+if (contactForm) {
+    contactForm.addEventListener("submit", async (event) => {
+        event.preventDefault();
 
-    const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify(data)
+        const formData = new FormData(contactForm);
+
+        try {
+            const response = await fetch("https://splitforms.com/api/submit", {
+                method: "POST",
+                body: formData
+            });
+
+            if (response.ok) {
+                alert("Message sent successfully!");
+                contactForm.reset();
+            } else {
+                alert("Something went wrong. Please try again.");
+            }
+
+        } catch (error) {
+            alert("Unable to send message. Please try again later.");
+        }
     });
-
-    const result = await response.json();
-
-    alert(result.message);
-});
-
-const form = document.getElementById("contact-form");
-
-form.addEventListener("submit", async (event) => {
-
-    event.preventDefault();
-
-    const data = {
-        name: form.elements[0].value,
-        email: form.elements[1].value,
-        message: form.elements[2].value
-    };
-
-
-    const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify(data)
-    });
-
-
-    const result = await response.json();
-
-    alert(result.message);
-
-});
+}
